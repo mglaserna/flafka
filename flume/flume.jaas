@@ -1,0 +1,17 @@
+  
+    Client {
+    com.sun.security.auth.module.Krb5LoginModule required
+    useKeyTab=true
+    storeKey=true
+    keyTab="/opt/cloudera/security/flume.keytab"
+    principal="flume/nvnenr2n15.novare.com.hk@GCE.ACMECORN.COM";
+    };
+    
+    KafkaClient {
+    com.sun.security.auth.module.Krb5LoginModule required
+    useKeyTab=true
+    storeKey=true
+    serviceName="kafka" 
+    keyTab="/opt/cloudera/security/flume.keytab"
+    principal="flume/nvnenr2n15.novare.com.hk@GCE.ACMECORN.COM";
+    };
