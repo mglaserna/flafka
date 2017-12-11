@@ -1,0 +1,10 @@
+===Test Kafka
+
+kafka-console-producer --broker-list 192.168.1.14:9092 --topic gab --producer.config kafka-client.conf
+kafka-console-consumer --new-consumer --topic gab --from-beginning  --bootstrap-server 192.168.1.14:9092 --consumer.config kafka-client.conf
+export KAFKA_OPTS="-Djava.security.auth.login.config=/run/cloudera-scm-agent/process/2193-kafka-KAFKA_BROKER/jaas.conf"
+
+
+
+
+
