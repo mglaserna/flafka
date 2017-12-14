@@ -1,5 +1,4 @@
-package com.test.spark
-
+package com.flafka.spark
 import org.apache.spark.streaming._
 import org.apache.spark.streaming.flume.FlumeUtils
 
